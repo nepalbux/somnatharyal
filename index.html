@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astrologer Som Nath Aryal - Vedic Astrology & Numerology</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#8A2BE2',secondary:'#FFD700'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(135deg, #0f0524 0%, #1a0f3c 100%);
+color: #fff;
+min-height: 100vh;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Playfair Display', serif;
+}
+.cosmic-bg {
+background-image: url('https://public.readdy.ai/ai/img_res/7e3a5aa78d5a18cd96582a0a5bb05d1d.jpg');
+background-size: cover;
+background-position: center;
+}
+.star {
+position: absolute;
+width: 2px;
+height: 2px;
+background: #fff;
+border-radius: 50%;
+opacity: 0.5;
+animation: twinkle 5s infinite;
+}
+@keyframes twinkle {
+0%, 100% { opacity: 0.1; }
+50% { opacity: 0.8; }
+}
+input, textarea {
+background-color: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.2);
+color: white;
+}
+input:focus, textarea:focus {
+border-color: #FFD700;
+outline: none;
+}
+.service-card {
+background: rgba(26, 15, 60, 0.7);
+transition: all 0.3s ease;
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.service-card:hover {
+transform: translateY(-5px);
+border-color: #FFD700;
+box-shadow: 0 10px 20px rgba(138, 43, 226, 0.3);
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 0;
+height: 2px;
+background: #FFD700;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.custom-checkbox {
+appearance: none;
+width: 20px;
+height: 20px;
+border: 2px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+background-color: transparent;
+position: relative;
+}
+.custom-checkbox:checked {
+background-color: #8A2BE2;
+border-color: #8A2BE2;
+}
+.custom-checkbox:checked::after {
+content: '';
+position: absolute;
+top: 2px;
+left: 6px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+</style>
+</head>
+<body>
+<!-- Stars Animation -->
+<div class="fixed inset-0 pointer-events-none overflow-hidden">
+<div class="star" style="top: 10%; left: 20%;"></div>
+<div class="star" style="top: 15%; left: 50%;"></div>
+<div class="star" style="top: 25%; left: 80%;"></div>
+<div class="star" style="top: 40%; left: 10%;"></div>
+<div class="star" style="top: 55%; left: 30%;"></div>
+<div class="star" style="top: 70%; left: 60%;"></div>
+<div class="star" style="top: 85%; left: 40%;"></div>
+<div class="star" style="top: 5%; left: 90%;"></div>
+<div class="star" style="top: 35%; left: 70%;"></div>
+<div class="star" style="top: 65%; left: 15%;"></div>
+<div class="star" style="top: 75%; left: 85%;"></div>
+<div class="star" style="top: 90%; left: 25%;"></div>
+</div>
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-opacity-80 backdrop-blur-md bg-[#0f0524]">
+<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+<h1 class="text-2xl md:text-3xl font-bold text-white">
+<span class="text-primary">Guru</span> Som Nath Aryal
+</h1>
+<nav class="hidden md:flex space-x-8">
+<a href="#home" class="nav-link text-white hover:text-secondary transition-colors">Home</a>
+<a href="#about" class="nav-link text-white hover:text-secondary transition-colors">About</a>
+<a href="#services" class="nav-link text-white hover:text-secondary transition-colors">Services</a>
+<a href="#contact" class="nav-link text-white hover:text-secondary transition-colors">Contact</a>
+</nav>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-white">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</header>
+<!-- Mobile Menu (Hidden by default) -->
+<div class="hidden fixed inset-0 z-50 bg-[#0f0524] bg-opacity-95">
+<div class="flex justify-end p-4">
+<button class="w-10 h-10 flex items-center justify-center text-white">
+<i class="ri-close-line ri-lg"></i>
+</button>
+</div>
+<nav class="flex flex-col items-center space-y-8 mt-16">
+<a href="#home" class="text-xl text-white hover:text-secondary transition-colors">Home</a>
+<a href="#about" class="text-xl text-white hover:text-secondary transition-colors">About</a>
+<a href="#services" class="text-xl text-white hover:text-secondary transition-colors">Services</a>
+<a href="#contact" class="text-xl text-white hover:text-secondary transition-colors">Contact</a>
+</nav>
+</div>
+<!-- Hero Section -->
+<section id="home" class="relative min-h-[90vh] flex items-center cosmic-bg">
+<div class="absolute inset-0 bg-gradient-to-r from-[#0f0524] via-[#0f0524cc] to-transparent"></div>
+<div class="container mx-auto px-4 relative z-10">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+Unlock the Secrets of Your Stars
+</h2>
+<p class="text-xl md:text-2xl mb-8 text-gray-200">
+Your trusted guide in astrology, numerology, and Vedic wisdom. Discover your cosmic path and embrace your destiny.
+</p>
+<button class="bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-button text-lg font-medium hover:opacity-90 transition-opacity shadow-lg flex items-center">
+<i class="ri-calendar-line ri-lg mr-2"></i>
+Book a Consultation
+</button>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
+<span class="text-secondary">About</span> Som Nath Aryal
+</h2>
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="md:w-1/2">
+<div class="relative">
+<div class="absolute inset-0 rounded-lg bg-gradient-to-br from-primary to-secondary opacity-20 blur-md transform -rotate-3"></div>
+<img src="https://static.readdy.ai/image/297aba5cef2cdc09c26ee0f479230db9/b26dfb62e319059ab41233042401028b.jpeg"
+alt="Astrologer Som Nath Aryal"
+class="relative rounded-lg w-full h-auto object-cover shadow-xl">
+</div>
+</div>
+<div class="md:w-1/2">
+<h3 class="text-2xl md:text-3xl font-semibold mb-6 text-secondary">My Cosmic Journey</h3>
+<p class="mb-4 text-gray-200">
+With over 15 years of experience in Vedic astrology, I have dedicated my life to understanding the cosmic forces that shape our existence. My journey began in the sacred temples of Nepal, where I studied ancient texts under the guidance of renowned astrologers.
+</p>
+<p class="mb-4 text-gray-200">
+I combine traditional Vedic wisdom with modern astrological techniques to provide accurate and insightful readings. My approach is holistic, considering not just your birth chart, but the complex interplay of planetary energies that influence your life path.
+</p>
+<p class="mb-8 text-gray-200">
+Throughout my career, I have helped thousands of individuals navigate life's challenges, find their purpose, and align with their cosmic destiny. My mission is to empower you with celestial knowledge that brings clarity, peace, and direction.
+</p>
+<div class="flex space-x-4">
+<div class="flex flex-col items-center">
+<div class="text-3xl font-bold text-secondary mb-2">5+</div>
+<div class="text-sm text-gray-300">Years Experience</div>
+</div>
+<div class="w-px bg-gray-700"></div>
+<div class="flex flex-col items-center">
+<div class="text-3xl font-bold text-secondary mb-2">5,000+</div>
+<div class="text-sm text-gray-300">Consultations</div>
+</div>
+<div class="w-px bg-gray-700"></div>
+<div class="flex flex-col items-center">
+<div class="text-3xl font-bold text-secondary mb-2">98%</div>
+<div class="text-sm text-gray-300">Client Satisfaction</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20 bg-[#1a0f3c] bg-opacity-50 rounded-lg p-8 shadow-xl">
+<h3 class="text-2xl font-semibold mb-6 text-center text-secondary">My Astrological Expertise</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 flex items-center justify-center mb-4 text-secondary">
+<i class="ri-planet-line ri-2x"></i>
+</div>
+<h4 class="text-xl font-medium mb-2">Vedic and KP Astrology</h4>
+<p class="text-gray-300">Ancient wisdom to reveal your life's purpose and karmic patterns</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 flex items-center justify-center mb-4 text-secondary">
+<i class="ri-numbers-line ri-2x"></i>
+</div>
+<h4 class="text-xl font-medium mb-2">Numerology</h4>
+<p class="text-gray-300">Discover the hidden meanings behind your life's significant numbers</p>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-16 h-16 flex items-center justify-center mb-4 text-secondary">
+<i class="ri-hand-line ri-2x"></i>
+</div>
+<h4 class="text-xl font-medium mb-2">Palm Reading</h4>
+<p class="text-gray-300">Interpreting the lines of your hand to reveal your destiny</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-20 bg-[#120936] bg-opacity-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
+<span class="text-secondary">Astrological</span> Services
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="service-card rounded-lg p-6 h-full flex flex-col">
+<div class="w-16 h-16 flex items-center justify-center mb-4 text-secondary">
+<i class="ri-user-star-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Personal Horoscope Readings</h3>
+<p class="text-gray-300 mb-6 flex-grow">
+Comprehensive analysis of your birth chart revealing your personality traits, strengths, challenges, and life path. Includes planetary positions and their influence on your life.
+</p>
+<button class="mt-auto bg-transparent border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors px-6 py-2 rounded-button whitespace-nowrap">
+Book Now
+</button>
+</div>
+<!-- Service 2 -->
+<div class="service-card rounded-lg p-6 h-full flex flex-col">
+<div class="w-16 h-16 flex items-center justify-center mb-4 text-secondary">
+<i class="ri-heart-2-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Vedic Compatibility Matching</h3>
+<p class="text-gray-300 mb-6 flex-grow">
+Traditional Vedic analysis of relationship compatibility between two individuals. Examines 36 points of Guna Milan to determine harmony in marriage and partnerships.
+</p>
+<button class="mt-auto bg-transparent border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors px-6 py-2 rounded-button whitespace-nowrap">
+Book Now
+</button>
+</div>
+<!-- Service 3 -->
+<div class="service-card rounded-lg p-6 h-full flex flex-col">
+<div class="w-16 h-16 flex items-center justify-center mb-4 text-secondary">
+<i class="ri-numbers-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Numerology Analysis</h3>
+<p class="text-gray-300 mb-6 flex-grow">
+Discover how numbers influence your life. Analysis of your birth date, name, and other significant numbers to reveal your life path, personality, and potential.
+</p>
+<button class="mt-auto bg-transparent border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors px-6 py-2 rounded-button whitespace-nowrap">
+Book Now
+</button>
+</div>
+<!-- Service 4 -->
+<div class="service-card rounded-lg p-6 h-full flex flex-col">
+<div class="w-16 h-16 flex items-center justify-center mb-4 text-secondary">
+<i class="ri-hand-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Palm Reading</h3>
+<p class="text-gray-300 mb-6 flex-grow">
+Ancient art of interpreting the lines and mounts on your palm. Reveals insights about your character, health, wealth, relationships, and major life events.
+</p>
+<button class="mt-auto bg-transparent border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors px-6 py-2 rounded-button whitespace-nowrap">
+Book Now
+</button>
+</div>
+<!-- Service 5 -->
+<div class="service-card rounded-lg p-6 h-full flex flex-col">
+<div class="w-16 h-16 flex items-center justify-center mb-4 text-secondary">
+<i class="ri-briefcase-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Career & Wealth Guidance</h3>
+<p class="text-gray-300 mb-6 flex-grow">
+Specialized astrological analysis focused on your career path, financial prospects, and optimal timing for important professional decisions.
+</p>
+<button class="mt-auto bg-transparent border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors px-6 py-2 rounded-button whitespace-nowrap">
+Book Now
+</button>
+</div>
+<!-- Service 6 -->
+<div class="service-card rounded-lg p-6 h-full flex flex-col">
+<div class="w-16 h-16 flex items-center justify-center mb-4 text-secondary">
+<i class="ri-computer-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Online Consultations</h3>
+<p class="text-gray-300 mb-6 flex-grow">
+Convenient virtual sessions via video call. Receive the same in-depth astrological guidance from anywhere in the world, with digital reports and recordings.
+</p>
+<button class="mt-auto bg-transparent border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors px-6 py-2 rounded-button whitespace-nowrap">
+Book Now
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-20">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
+<span class="text-secondary">Client</span> Testimonials
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-[#1a0f3c] bg-opacity-50 p-6 rounded-lg">
+<div class="flex mb-4">
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+</div>
+<p class="text-gray-200 mb-6 italic">
+"Som Nath's reading was incredibly accurate. He predicted my career change months before it happened and guided me through a difficult transition period. His insights have been invaluable."
+</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-[#0f0524] font-bold">RP</div>
+<div class="ml-4">
+<div class="font-medium">Rajesh Patel</div>
+<div class="text-sm text-gray-400">Business Consultant</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-[#1a0f3c] bg-opacity-50 p-6 rounded-lg">
+<div class="flex mb-4">
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+</div>
+<p class="text-gray-200 mb-6 italic">
+"The compatibility reading Som Nath provided for my relationship was eye-opening. He identified potential challenges and suggested remedies that have significantly improved our harmony."
+</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-[#0f0524] font-bold">AS</div>
+<div class="ml-4">
+<div class="font-medium">Anita Sharma</div>
+<div class="text-sm text-gray-400">University Professor</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-[#1a0f3c] bg-opacity-50 p-6 rounded-lg">
+<div class="flex mb-4">
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+<i class="ri-star-fill text-secondary"></i>
+</div>
+<p class="text-gray-200 mb-6 italic">
+"I was skeptical at first, but Som Nath's numerology analysis was surprisingly accurate. His guidance helped me make important decisions about my business timing that proved to be extremely beneficial."
+</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-[#0f0524] font-bold">DT</div>
+<div class="ml-4">
+<div class="font-medium">David Thompson</div>
+<div class="text-sm text-gray-400">Entrepreneur</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-[#120936] bg-opacity-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
+<span class="text-secondary">Contact</span> Me
+</h2>
+<div class="flex flex-col md:flex-row gap-12">
+<!-- Contact Form -->
+<div class="md:w-1/2">
+<h3 class="text-2xl font-semibold mb-6">Send a Message</h3>
+<form>
+<div class="mb-6">
+<label for="name" class="block mb-2 text-gray-300">Full Name</label>
+<input type="text" id="name" class="w-full px-4 py-3 rounded border-none focus:ring-2 focus:ring-secondary" placeholder="Your name">
+</div>
+<div class="mb-6">
+<label for="email" class="block mb-2 text-gray-300">Email Address</label>
+<input type="email" id="email" class="w-full px-4 py-3 rounded border-none focus:ring-2 focus:ring-secondary" placeholder="Your email">
+</div>
+<div class="mb-6">
+<label for="subject" class="block mb-2 text-gray-300">Subject</label>
+<input type="text" id="subject" class="w-full px-4 py-3 rounded border-none focus:ring-2 focus:ring-secondary" placeholder="Subject of your message">
+</div>
+<div class="mb-6">
+<label for="message" class="block mb-2 text-gray-300">Message</label>
+<textarea id="message" rows="5" class="w-full px-4 py-3 rounded border-none focus:ring-2 focus:ring-secondary" placeholder="Your message"></textarea>
+</div>
+<div class="mb-6 flex items-start">
+<input type="checkbox" id="consent" class="custom-checkbox mr-3 mt-1">
+<label for="consent" class="text-sm text-gray-300">I consent to having my information processed to receive responses to my inquiry.</label>
+</div>
+<button type="submit" class="w-full bg-gradient-to-r from-primary to-secondary text-white py-3 rounded-button font-medium hover:opacity-90 transition-opacity !rounded-button whitespace-nowrap">
+Send Message
+</button>
+</form>
+</div>
+<!-- Contact Information -->
+<div class="md:w-1/2">
+<h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+<div class="space-y-6 mb-8">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center text-secondary mr-4">
+<i class="ri-phone-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium mb-1">Phone</h4>
+<p class="text-gray-300">+977-9863775398</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center text-secondary mr-4">
+<i class="ri-mail-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium mb-1">Email</h4>
+<p class="text-gray-300">aryalsomnath6@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center text-secondary mr-4">
+<i class="ri-map-pin-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium mb-1">Location</h4>
+<p class="text-gray-300">Devghat, Tanahun, Nepal</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center text-secondary mr-4">
+<i class="ri-time-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium mb-1">Consultation Hours</h4>
+<p class="text-gray-300">Sunday - Friday: 9:00 AM - 6:00 PM</p>
+<p class="text-gray-300">Saturday: Closed</p>
+</div>
+</div>
+</div>
+<div class="rounded-lg overflow-hidden h-80 mb-6">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28267.55582378745!2d84.4200961!3d27.7957042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fcb8727bb3cd%3A0xd11793279ace3679!2sDevghat%2C%20Nepal!5e0!3m2!1sen!2sus!4v1712342400000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div>
+<h4 class="font-medium mb-3">Follow Me</h4>
+<div class="flex space-x-4">
+<a href="https://www.youtube.com/@ptcnepal7047" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-400 text-secondary hover:bg-secondary hover:text-[#0f0524] transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="https://www.youtube.com/@ptcnepal7047" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-pink-400 text-secondary hover:bg-secondary hover:text-[#0f0524] transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.youtube.com/@ptcnepal7047" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-red-400 text-secondary hover:bg-secondary hover:text-[#0f0524] transition-colors">
+<i class="ri-youtube-line"></i>
+</a>
+<a href="https://www.youtube.com/@ptcnepal7047" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-green-400 text-secondary hover:bg-secondary hover:text-[#0f0524] transition-colors">
+<i class="ri-whatsapp-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 relative overflow-hidden">
+<div class="absolute inset-0" style="background-image: url('https://public.readdy.ai/ai/img_res/b1a0ee2a8a21ba4a39df1af4a7aa7b94.jpg'); background-size: cover; background-position: center; opacity: 0.3;"></div>
+<div class="container mx-auto px-4 relative z-10">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Begin Your Cosmic Journey Today</h2>
+<p class="text-xl text-gray-200 mb-8">
+Let the stars guide you toward clarity, purpose, and fulfillment. Schedule your personalized astrological consultation now.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-button text-lg font-medium hover:opacity-90 transition-opacity shadow-lg !rounded-button whitespace-nowrap">
+Book a Consultation
+</button>
+<button class="bg-transparent border-2 border-secondary text-secondary px-8 py-4 rounded-button text-lg font-medium hover:bg-secondary hover:text-white transition-colors !rounded-button whitespace-nowrap">
+View Services
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0a041d] pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<h3 class="text-xl font-semibold mb-6 text-white">Som Nath Aryal</h3>
+<p class="text-gray-400 mb-6">
+Vedic and KP astrologer with over 5 years of experience providing accurate readings and spiritual guidance.
+</p>
+<div class="flex space-x-4">
+<a href="https://www.youtube.com/@ptcnepal7047" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-secondary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="https://www.youtube.com/@ptcnepal7047" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:text-secondary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="https://www.youtube.com/@ptcnepal7047" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-secondary transition-colors">
+<i class="ri-youtube-line"></i>
+</a>
+<a href="https://www.youtube.com/@ptcnepal7047" target="_blank" rel="noopener noreferrer" class="text-green-400 hover:text-secondary transition-colors">
+<i class="ri-whatsapp-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6 text-white">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="#home" class="text-gray-400 hover:text-secondary transition-colors">Home</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-secondary transition-colors">About</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-secondary transition-colors">Services</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-secondary transition-colors">Contact</a></li>
+<li><a href="#" class="text-gray-400 hover:text-secondary transition-colors">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6 text-white">Services</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-secondary transition-colors">Personal Horoscope</a></li>
+<li><a href="#" class="text-gray-400 hover:text-secondary transition-colors">Compatibility Matching</a></li>
+<li><a href="#" class="text-gray-400 hover:text-secondary transition-colors">Numerology Analysis</a></li>
+<li><a href="#" class="text-gray-400 hover:text-secondary transition-colors">Palm Reading</a></li>
+<li><a href="#" class="text-gray-400 hover:text-secondary transition-colors">Career Guidance</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6 text-white">Contact</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="ri-map-pin-line text-secondary mr-3 mt-1"></i>
+<span class="text-gray-400">Devghat, Tanahun, Nepal</span>
+</li>
+<li class="flex items-start">
+<i class="ri-phone-line text-secondary mr-3 mt-1"></i>
+<span class="text-gray-400">+977-9863774398</span>
+</li>
+<li class="flex items-start">
+<i class="ri-mail-line text-secondary mr-3 mt-1"></i>
+<span class="text-gray-400">aryalsomnath6@gmail.com</span>
+</li>
+<li class="flex items-start">
+<i class="ri-time-line text-secondary mr-3 mt-1"></i>
+<span class="text-gray-400">Mon-Sat: 9:00 AM - 6:00 PM</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 mt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-500 text-sm mb-4 md:mb-0">
+&copy; 2025 Som Nath Aryal. All rights reserved.
+</p>
+<p class="text-gray-400 mr-1">Developed by:
+<a href="https://ramrajabastakoti.com.np" target="_blank" class="text-primary hover:text-white transition duration-300">Ramraja</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+<script>
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+const menuButton = document.querySelector('button.md\\:hidden');
+const mobileMenu = document.querySelector('.fixed.inset-0.z-50.bg-\\[\\#0f0524\\]');
+const closeButton = mobileMenu.querySelector('button');
+menuButton.addEventListener('click', function() {
+mobileMenu.classList.remove('hidden');
+});
+closeButton.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+});
+// Close mobile menu when clicking on a link
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+});
+});
+});
+</script>
+</body>
+</html>
